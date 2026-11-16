@@ -43,13 +43,17 @@ README.md                     этот файл
 
 ## Git
 
-Репозиторий инициализирован локально, ветка по умолчанию — `main`, первый коммит
-содержит исходное состояние проекта. Удалённый репозиторий (GitHub, GitLab, Azure
-DevOps) пока не подключён:
+Ветка по умолчанию — `main`, она отслеживает удалённую `origin/main`:
+
+- удалённый репозиторий: <https://github.com/SadidaNrok/TestForDeepSeekHarness>
+- remote `origin` уже настроен, первый push выполнен
+
+Обычный цикл работы:
 
 ```powershell
-git remote add origin <URL-репозитория>
-git push -u origin main
+git add -A
+git commit -m "Что изменилось"
+git push
 ```
 
 ## Дальнейшие шаги
